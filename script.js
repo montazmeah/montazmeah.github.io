@@ -86,7 +86,7 @@ document.querySelector("#check").addEventListener("click", function (e) {
 
 document.querySelector("#next").addEventListener("click", function () {
   document.querySelector("h3").style.backgroundColor = "white";
-  document.querySelector("ul").innerHTML = "";
+  document.querySelector("section ul").innerHTML = "";
   document.querySelector("h1").innerText = "";
   document.querySelector("section").classList.remove("answered");
   document.querySelector("#check").style.display = "block";
