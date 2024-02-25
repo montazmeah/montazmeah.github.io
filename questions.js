@@ -155,19 +155,19 @@ let questions = [
     answers: [
       {
         correct: false,
-        text: "At the bottom of the <BODY> section after referencing at.js",
+        text: "At the bottom of the &lt;BODY&gt; section after referencing at.js",
       },
       {
         correct: false,
-        text: "In the <HEAD> section after referencing at.js",
+        text: "In the &lt;HEAD&gt; section after referencing at.js",
       },
       {
         correct: false,
-        text: "At the bottom of the <BODY> section before referencing at.js",
+        text: "At the bottom of the &lt;BODY&gt; section before referencing at.js",
       },
       {
         correct: true,
-        text: "In the <HEAD> section before referencing at.js",
+        text: "In the &lt;HEAD&gt; section before referencing at.js",
       },
     ],
   },
