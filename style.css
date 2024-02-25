@@ -1,0 +1,55 @@
+body {
+  padding: 50px;
+}
+section,
+main {
+  max-width: 900px;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+}
+
+section li {
+  border: 1px solid grey;
+  list-style-type: lower-alpha;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+section li:hover,
+button:hover {
+  cursor: pointer;
+}
+
+section li::marker {
+  color: black !important;
+}
+.selected {
+  background: #007bff;
+  color: white;
+}
+
+#buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#buttons button {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+.answered .correct {
+  background-color: green;
+}
+.answered .correct {
+  background-color: #28a745;
+}
+
+.answered .incorrect {
+  background-color: #dc3545;
+}
