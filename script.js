@@ -3,7 +3,8 @@ function getQuestion() {
   if (url.searchParams.get("question")) {
     return questions[+url.searchParams.get("question") - 1];
   }
-  return questions[Math.round(Math.random() * questions.length)];
+  console.log(questions[Math.floor(Math.random() * questions.length)]);
+  return questions[Math.floor(Math.random() * questions.length)];
 }
 
 function displayQuestion(questionObject) {
