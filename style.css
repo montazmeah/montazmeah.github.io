@@ -43,8 +43,8 @@ section li::marker {
   width: 200px;
 }
 
-.answered .correct {
-  background-color: green;
+section {
+  margin-top: 35px;
 }
 .answered .correct {
   background-color: #28a745;
@@ -52,4 +52,18 @@ section li::marker {
 
 .answered .incorrect {
   background-color: #dc3545;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+}
+
+tr {
+  display: table-row;
+}
+
+th {
+  border-bottom-width: 1px;
 }

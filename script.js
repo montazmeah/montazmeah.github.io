@@ -1,4 +1,8 @@
 function getQuestion() {
+  let url = new URL(location.href);
+  if (url.searchParams.get("question")) {
+    return questions[+url.searchParams.get("question") - 1];
+  }
   return questions[Math.round(Math.random() * questions.length)];
 }
 
@@ -6,6 +10,8 @@ function displayQuestion(questionObject) {
   console.log({ questionObject });
   document.querySelector("h3").innerText = "Question: " + questionObject.number;
   document.querySelector("main").innerHTML = questionObject.question;
+
+  document.querySelector("#notes p").innerHTML = questionObject.notes;
 
   shuffle(questionObject.answers).forEach((answer) => {
     document.querySelector("section ul").innerHTML += `<li ${

@@ -25,6 +25,7 @@ let questions = [
         text: "The entity.categoryId mbox parameter contains only a single value.",
       },
     ],
+    notes: ``,
   },
   {
     number: 2,
@@ -48,6 +49,7 @@ let questions = [
         text: "adobe_mc_ref",
       },
     ],
+    notes: ``,
   },
   {
     number: 3,
@@ -67,6 +69,38 @@ let questions = [
         text: "AdBox",
       },
     ],
+    notes: `<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Purpose</th>
+      <th scope="col">When To Use</th>
+      <th scope="col">URL Structure</th>
+      <th scope="col">Offer Type</th>
+      <th scope="col">Offer Content</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">AdBox</th>
+      <td>Returns different images to the ad</td>
+      <td>To change the content of an ad</td>
+      <td><code>clientcode​.tt.​omtrdc​.net/​m2​/​clientcode/ubox/​image?</code></td>
+      <td>redirect offer</td>
+      <td>URL for an image</td>
+    </tr>
+    <tr>
+      <th scope="row">Redirector</th>
+      <td>Redirects a visitor to a different web page</td>
+      <td>To change the landing page of an ad	</td>
+      <td><code>clientcode​.tt.omtrdc.net/​m2/clientcode​/ubox/page?</code></td>
+      <td>redirect offer</td>
+      <td>URL for a page</td>
+
+    </tr>
+    
+  </tbody>
+</table>`,
   },
   {
     number: 4,
@@ -90,6 +124,7 @@ let questions = [
         text: "Mbox parameters",
       },
     ],
+    notes: ``,
   },
   {
     number: 5,
@@ -109,6 +144,7 @@ let questions = [
         text: "Analytics Segments",
       },
     ],
+    notes: ``,
   },
   {
     number: 6,
@@ -128,6 +164,7 @@ let questions = [
         text: "Profile Script",
       },
     ],
+    notes: ``,
   },
   {
     number: 7,
@@ -147,6 +184,7 @@ let questions = [
         text: "Increase the Target profile expiration from the default of 14 days to a value greater than one month.",
       },
     ],
+    notes: ``,
   },
   {
     number: 8,
@@ -170,6 +208,10 @@ let questions = [
         text: "In the &lt;HEAD&gt; section before referencing at.js",
       },
     ],
+    notes: `
+    
+    
+    `,
   },
   {
     number: 9,
@@ -189,6 +231,7 @@ let questions = [
         text: "Use AdBox URLs",
       },
     ],
+    notes: ``,
   },
   {
     number: 10,
@@ -208,6 +251,7 @@ let questions = [
         text: "appMeasurement.js",
       },
     ],
+    notes: ``,
   },
   {
     number: 11,
@@ -227,6 +271,7 @@ let questions = [
         text: "Activity Goals",
       },
     ],
+    notes: ``,
   },
   {
     number: 12,
@@ -254,6 +299,7 @@ let questions = [
         text: "Provision Analytics for Target (A4T) Integration.",
       },
     ],
+    notes: ``,
   },
   {
     number: 13,
@@ -273,6 +319,7 @@ let questions = [
         text: "Use AEM Experience Fragments as Adobe Target Offers.",
       },
     ],
+    notes: ``,
   },
   {
     number: 14,
@@ -292,6 +339,7 @@ let questions = [
         text: "Implement server-side forwarding in Adobe Analytics.",
       },
     ],
+    notes: ``,
   },
   {
     number: 15,
@@ -319,6 +367,7 @@ let questions = [
         text: "Enable Image Offers in Adobe Target > Setup.",
       },
     ],
+    notes: ``,
   },
   {
     number: 16,
@@ -338,6 +387,7 @@ let questions = [
         text: "Personalize the email body using Profile Scripts.",
       },
     ],
+    notes: ``,
   },
   {
     number: 17,
@@ -357,6 +407,7 @@ let questions = [
         text: "Analytics for Target (A4T)",
       },
     ],
+    notes: ``,
   },
   {
     number: 18,
@@ -376,6 +427,7 @@ let questions = [
         text: "Adobe Target",
       },
     ],
+    notes: ``,
   },
   {
     number: 19,
@@ -399,6 +451,7 @@ let questions = [
         text: "It logs data to be sent to the Adobe Experience Platform.",
       },
     ],
+    notes: ``,
   },
   {
     number: 20,
@@ -422,6 +475,7 @@ let questions = [
         text: "Observer",
       },
     ],
+    notes: ``,
   },
   {
     number: 21,
@@ -441,6 +495,7 @@ let questions = [
         text: "Experience Cloud Admin Console -> Target Product Profiles",
       },
     ],
+    notes: ``,
   },
   {
     number: 22,
@@ -460,6 +515,7 @@ let questions = [
         text: "The client should use cross domain tracking for both domains.",
       },
     ],
+    notes: ``,
   },
   {
     number: 23,
@@ -479,6 +535,7 @@ let questions = [
         text: "Expose Experience Fragments to the mobile application.",
       },
     ],
+    notes: ``,
   },
   {
     number: 24,
@@ -502,6 +559,7 @@ let questions = [
         text: "JSON Offers",
       },
     ],
+    notes: ``,
   },
   {
     number: 25,
@@ -536,6 +594,7 @@ let questions = [
         text: `Add a "Profile Attribute Matching" filtering rule to the Criteria to recommend packages that match the viewer's membership level.`,
       },
     ],
+    notes: ``,
   },
   {
     number: 26,
@@ -555,6 +614,7 @@ let questions = [
         text: "Recently Viewed Items",
       },
     ],
+    notes: ``,
   },
   {
     number: 27,
@@ -578,6 +638,7 @@ let questions = [
         text: "People Who Bought This, Bought That",
       },
     ],
+    notes: ``,
   },
   {
     number: 28,
@@ -597,6 +658,7 @@ let questions = [
         text: "Google Product Feeds",
       },
     ],
+    notes: ``,
   },
   {
     number: 29,
@@ -616,6 +678,7 @@ let questions = [
         text: "Feeds Entity",
       },
     ],
+    notes: ``,
   },
   {
     number: 30,
@@ -640,6 +703,7 @@ let questions = [
         text: "$key.pageURL",
       },
     ],
+    notes: ``,
   },
   {
     number: 31,
@@ -659,6 +723,7 @@ let questions = [
         text: "Deploy adobe.target.triggerView() function in SPA.",
       },
     ],
+    notes: ``,
   },
 
   {
@@ -683,6 +748,7 @@ let questions = [
         text: "at.js 1.x cannot leverage prefetch of offers nor triggerView() for VEC-based activities.",
       },
     ],
+    notes: ``,
   },
   {
     number: 33,
@@ -702,6 +768,7 @@ let questions = [
         text: "Adobe Target's Delivery API",
       },
     ],
+    notes: ``,
   },
 
   {
@@ -725,6 +792,7 @@ Which feature of Adobe Target can be used to capture the recency of the visit?</
         text: "Customer Attributes",
       },
     ],
+    notes: ``,
   },
 
   {
@@ -754,6 +822,7 @@ Which feature of Adobe Target can be used to capture the recency of the visit?</
         text: "targetLoadRequestWithName",
       },
     ],
+    notes: ``,
   },
   {
     number: 36,
@@ -776,6 +845,7 @@ Which API method can be used to retrieve the custom visitor ID from Adobe Target
         text: "getTntId()",
       },
     ],
+    notes: ``,
   },
   {
     number: 37,
@@ -799,30 +869,9 @@ Which API method can be used to retrieve the custom visitor ID from Adobe Target
         text: "Recommendations",
       },
     ],
+    notes: ``,
   },
-  {
-    number: 38,
-    choose: 2,
-    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">Which two Adobe Target activity types can be created in the Mobile App Visual Experience Composer? (Choose two.)</div>`,
-    answers: [
-      {
-        correct: true,
-        text: `A/B Test`,
-      },
-      {
-        correct: false,
-        text: "Multivariate Test",
-      },
-      {
-        correct: true,
-        text: "Experience Targeting",
-      },
-      {
-        correct: false,
-        text: "Recommendations",
-      },
-    ],
-  },
+
   {
     number: 38,
     choose: 1,
@@ -848,6 +897,7 @@ What is the correct syntax for the Dynamic Data?</p>
         text: '${user.lastProductPurchased encode="escape"}',
       },
     ],
+    notes: ``,
   },
   {
     number: 39,
@@ -871,6 +921,7 @@ What is the correct syntax for the Dynamic Data?</p>
         text: 'Missing displayProposition value "1"',
       },
     ],
+    notes: ``,
   },
   {
     number: 40,
@@ -894,6 +945,7 @@ What is the correct syntax for the Dynamic Data?</p>
         text: "The users are using the Company's VPN that is changing their actual location.",
       },
     ],
+    notes: ``,
   },
 
   {
@@ -939,6 +991,7 @@ Based on the code exhibit, what should the Architect do to fix this issue?</p>
         text: 'Correct the "page" variable assignment inside the dataLayer object.',
       },
     ],
+    notes: ``,
   },
   {
     number: 42,
@@ -958,6 +1011,7 @@ Based on the code exhibit, what should the Architect do to fix this issue?</p>
         text: "Include additional code in the redirect offer to encode the URL parameters.",
       },
     ],
+    notes: ``,
   },
   {
     number: 43,
@@ -981,6 +1035,7 @@ Based on the code exhibit, what should the Architect do to fix this issue?</p>
         text: "The audience of the specific activity has a collision with another activity.",
       },
     ],
+    notes: ``,
   },
   {
     number: 44,
@@ -1000,6 +1055,7 @@ Based on the code exhibit, what should the Architect do to fix this issue?</p>
         text: "Audience Library in People Core Service",
       },
     ],
+    notes: ``,
   },
   {
     number: 45,
@@ -1032,6 +1088,7 @@ To which other group should the user belong?</p>
         text: "Web Services Access Group in Adobe Analytics",
       },
     ],
+    notes: ``,
   },
   {
     number: 46,
@@ -1051,6 +1108,7 @@ To which other group should the user belong?</p>
         text: "Audiences in Adobe Target",
       },
     ],
+    notes: ``,
   },
 
   {
@@ -1080,6 +1138,7 @@ Assuming results are ready for the requested algorithm/key combination, what is 
         text: "The Design contains an error.",
       },
     ],
+    notes: ``,
   },
   {
     number: 48,
@@ -1104,5 +1163,6 @@ Based on the code snippet below of the Recommendations design, what should the a
         text: 'Append "jQuery" to the front of all of the entity references.',
       },
     ],
+    notes: ``,
   },
 ];
