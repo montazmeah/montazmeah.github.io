@@ -69,38 +69,42 @@ let questions = [
         text: "AdBox",
       },
     ],
-    notes: `<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Purpose</th>
-      <th scope="col">When To Use</th>
-      <th scope="col">URL Structure</th>
-      <th scope="col">Offer Type</th>
-      <th scope="col">Offer Content</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">AdBox</th>
-      <td>Returns different images to the ad</td>
-      <td>To change the content of an ad</td>
-      <td><code>clientcode​.tt.​omtrdc​.net/​m2​/​clientcode/ubox/​image?</code></td>
-      <td>redirect offer</td>
-      <td>URL for an image</td>
-    </tr>
-    <tr>
-      <th scope="row">Redirector</th>
-      <td>Redirects a visitor to a different web page</td>
-      <td>To change the landing page of an ad	</td>
-      <td><code>clientcode​.tt.omtrdc.net/​m2/clientcode​/ubox/page?</code></td>
-      <td>redirect offer</td>
-      <td>URL for a page</td>
-
-    </tr>
+    notes: `
     
-  </tbody>
-</table>`,
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th scope="col"></th>
+            <th scope="col">Purpose</th>
+            <th scope="col">When To Use</th>
+            <th scope="col">URL Structure</th>
+            <th scope="col">Offer Type</th>
+            <th scope="col">Offer Content</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">AdBox</th>
+            <td>Returns different images to the ad</td>
+            <td>To change the content of an ad</td>
+            <td><code>clientcode​.tt.​omtrdc​.net/​m2​/​clientcode/ubox/​image?</code></td>
+            <td>redirect offer</td>
+            <td>URL for an image</td>
+            </tr>
+            <tr>
+            <th scope="row">Redirector</th>
+            <td>Redirects a visitor to a different web page</td>
+            <td>To change the landing page of an ad	</td>
+            <td><code>clientcode​.tt.omtrdc.net/​m2/clientcode​/ubox/page?</code></td>
+            <td>redirect offer</td>
+            <td>URL for a page</td>
+
+            </tr>
+            
+        </tbody>
+    </table>
+    <p>source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target-dev/developer/implement-email/overview.html?lang=en">https://experienceleague.adobe.com/docs/target-dev/developer/implement-email/overview.html?lang=en</a></p>
+    `,
   },
   {
     number: 4,
