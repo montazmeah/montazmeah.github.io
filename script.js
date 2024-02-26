@@ -88,6 +88,8 @@ document.querySelector("#check").addEventListener("click", function (e) {
   document.querySelector("section").classList.add("answered");
 
   document.querySelector("#next").style.display = "block";
+
+  document.querySelector("#notes").style.display = "block";
 });
 
 document.querySelector("#next").addEventListener("click", function () {

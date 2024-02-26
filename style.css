@@ -67,3 +67,11 @@ tr {
 th {
   border-bottom-width: 1px;
 }
+
+h3 {
+  padding: 7px;
+}
+
+#notes {
+  display: none;
+}
