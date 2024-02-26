@@ -98,5 +98,6 @@ document.querySelector("#next").addEventListener("click", function () {
   document.querySelector("h1").innerText = "";
   document.querySelector("section").classList.remove("answered");
   document.querySelector("#check").style.display = "block";
+  document.querySelector("#notes").style.display = "none";
   displayQuestion(getQuestion());
 });
