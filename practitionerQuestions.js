@@ -450,4 +450,227 @@ let questions = [
     ],
     notes: ``,
   },
+  {
+    number: 23,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">Visual Experience Composer is being used by a client to create an experience. It has been discovered that the content within an iframe on the page cannot be changed in Visual Experience Composer (VEC).<p></p><p></p><p>Which action, if any, can be taken to resolve this issue?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Ensure that the iframe document is Target-enabled, and then load the iframe URL by adding some custom parameters.",
+      },
+      {
+        correct: true,
+        text: "Ensure that the iframe document is Target-enabled, and then load the iframe URL in the VEC.",
+      },
+      {
+        correct: false,
+        text: "An iframe URL cannot be loaded in the VEC.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 24,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;"><p>A client wants to send an email to a specific group of users in order to conduct an A/B Test.</p>
+
+    <p>Which feature can be used to create an experience to meet this goal?</p>
+    </div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Form-Based Experience Composer",
+      },
+      {
+        correct: false,
+        text: "Visual Experience Composer",
+      },
+      {
+        correct: false,
+        text: "Enhanced Experience Composer",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 25,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">A client wants to host content outside of Adobe Target that Target references and delivers to the end users. This content could be in a content management system or in another system. <p></p><p></p><p>Which offer/content needs to be selected in Form-Based Experience composer to meet this goal?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Create HTML Offer",
+      },
+      {
+        correct: false,
+        text: "Create Redirect Offer",
+      },
+      {
+        correct: true,
+        text: "Create Remote Offer",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 26,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner is in the process of creating additional experiences using Visual Experience Composer.<p></p><p></p><p>Which steps should be taken?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: 'Click "Add Experience Targeting" > Select the audience > Choose Audience dialog box displays > Add an experience',
+      },
+      {
+        correct: false,
+        text: 'Click "Add Experience Targeting" >  Add an experience > Choose Audience dialog box displays > Select the audience',
+      },
+      {
+        correct: true,
+        text: 'Click "Add Experience Targeting" >  Choose Audience dialog box displays >  Select the audience > Add an experience',
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 27,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner is performing functions using Experience, and all actions are being completed with the help of Experience Composer.<p></p><p></p><p>Which function is possible in this situation?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Renaming an experience is possible, but an experience cannot be duplicated or deleted.",
+      },
+      {
+        correct: false,
+        text: "Duplication and renaming an experience are possible, but an experience cannot be deleted.",
+      },
+      {
+        correct: true,
+        text: "Duplicating, renaming, and deleting an experience are all possible.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 28,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner is using Workflow to create all activity types.<p></p><p></p><p>Which sequence of steps should be followed?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Create > Goal and Settings > Target",
+      },
+      {
+        correct: false,
+        text: "Goal and Settings > Create > Target",
+      },
+      {
+        correct: true,
+        text: "Create > Target > Goal and Settings",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 29,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner is using the "Goal and Settings" step of the workflow to create Target Activities. The Setting being used will specify whether data is collected from Adobe Target or from Adobe Analytics.<p></p><p></p><p>Which Setting category is being used?</p></div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Reporting",
+      },
+      {
+        correct: false,
+        text: "Metadata",
+      },
+      {
+        correct: false,
+        text: "Activity",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 30,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner needs to use an A/B Test which will identify a winner among two or more experiences and then re-direct traffic to that winner, increasing conversion as the test runs and learns.<p></p><p></p><p>Which test is used for this purpose? </p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Manual A/B",
+      },
+      {
+        correct: true,
+        text: "Auto-Allocate",
+      },
+      {
+        correct: false,
+        text: "Auto-Target",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 31,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner created an A/B Test activity with a success metric that is used when a visitor performs these actions on a site:<p></p><p>• Clicks a button</p><p>• Views a page</p><p>• Completes a survey</p><p>• Makes a purchase</p><p></p><p>Which success metric is being used?</p></div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Conversion",
+      },
+      {
+        correct: false,
+        text: "Page Views",
+      },
+      {
+        correct: false,
+        text: "Custom Scoring",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 32,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">A client will be having an outdoor equipment website and wants to show different hero images on the homepage. The specific image shown will be based on the visitor's location or their hobbies. <p></p><p></p><p>Which activity could be used to accomplish this step?</p></div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Experience Targeting",
+      },
+      {
+        correct: false,
+        text: "Auto-Allocate",
+      },
+      {
+        correct: false,
+        text: "A/B Test",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 33,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An XT Activity was created by an Adobe Target Business Practitioner. During the testing phase, the Practitioner notices that visitors who should have qualified for Experience B or C qualified for Experience A instead.<p></p><p></p><p>How should the Practitioner resolve this problem?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Delete all audience/experience pairs and recreate them.",
+      },
+      {
+        correct: true,
+        text: "Reorder the audience/experience pair.",
+      },
+      {
+        correct: false,
+        text: "Create a new XT Activity.",
+      },
+    ],
+    notes: ``,
+  },
 ];
