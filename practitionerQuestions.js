@@ -85,7 +85,7 @@ let questions = [
     question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner has developed a number of offers for the platforms. These offers require HTML code knowledge. The client wishes to manage these offers in such a way that content creators with no coding background can create these offers and use them for Adobe Target activities. <p></p><p></p><p>Which action can be taken to improve the creation of offers for content creators?</p></div>`,
     answers: [
       {
-        correct: true,
+        correct: false,
         text: "Use Images for new offers.",
       },
       {
