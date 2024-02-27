@@ -547,7 +547,41 @@ mboxPC={123456}" border=:"0"/&gt;
         text: "Observer",
       },
     ],
-    notes: ``,
+    notes: `
+    <h3 id="roles-permissions" tabindex="-1">Roles and permissions</h3>
+    <p>Roles and permissions determine the access levels that users have to create and manage activities in your Target implementation. In Target, roles include the following:</p>
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Role</th>
+      <th scope="col">Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Approver</th>
+      <td>Can create, edit, and activate or stop activities.</td>
+    </tr>
+    <tr>
+      <th scope="row">Editor</th>
+      <td>Can create and edit activities before they are live, but cannot approve the launch of an activity.</td>
+    </tr>
+    <tr>
+      <th scope="row">Observer</th>
+      <td>Can view activities, but cannot create or edit them.</td>
+    </tr>
+    <tr>
+      <th scope="row">Publisher</th>
+      <td>Similar to the Observer role (can view activities, but cannot create or edit them). However, the Publisher role has the additional permission to activate activities.</td>
+    </tr>
+    
+  </tbody>
+</table>
+<p>Source: <a href="https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en">https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en</a></p>
+
+    
+    `,
   },
   {
     number: 21,
