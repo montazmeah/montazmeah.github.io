@@ -228,7 +228,7 @@ let questions = [
     question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner hypothesizes that placing ads on a homepage can improve conversions. In order to test this hypothesis, five different elements of the homepage were selected to be included in the test. These elements were banner image, promo text, a call to action, header, and footer. The Practitioner plans on identifying the offer with the highest conversion as the test winner. <p></p><p></p><p>At which confidence level should this hypothesis be tested?</p></div>`,
     answers: [
       {
-        correct: true,
+        correct: false,
         text: "0.9",
       },
       {
