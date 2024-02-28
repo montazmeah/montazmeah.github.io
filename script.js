@@ -3,11 +3,15 @@ function getQuestion() {
   if (url.searchParams.get("question")) {
     return questions[+url.searchParams.get("question") - 1];
   }
-  console.log(questions[Math.floor(Math.random() * questions.length)]);
+  //console.log(questions[Math.floor(Math.random() * questions.length)]);
   return questions[Math.floor(Math.random() * questions.length)];
 }
 
 function displayQuestion(questionObject) {
+  // for disqus
+  window.PAGE_URL = document.domain + location.pathname;
+  window.PAGE_IDENTIFIER = questionObject.number;
+
   console.log({ questionObject });
   document.querySelector("h3").innerText = "Question: " + questionObject.number;
   document.querySelector("main").innerHTML = questionObject.question;
