@@ -673,4 +673,688 @@ let questions = [
     ],
     notes: ``,
   },
+  {
+    number: 34,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">A client is launching a new product and wants to run an ad that combines the banner and text. In preparation for this action, the client wants to know which page elements have the greatest influence on conversion. <p></p><p></p><p>Which activity can provide this information?</p></div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Multivariate Test",
+      },
+      {
+        correct: false,
+        text: "Recommendations",
+      },
+      {
+        correct: false,
+        text: "Experience Targeting",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 35,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner developed a Multivariate Test, but it was discovered that the same piece of content was being delivered to multiple locations. <p></p><p></p><p>What could be the underlying cause of this problem?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Duplicate JavaScript class on the page",
+      },
+      {
+        correct: true,
+        text: "Duplicate DOM IDs on the page",
+      },
+      {
+        correct: false,
+        text: "Duplicate HTML code on the page",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 36,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">Which strategy should be suggested to a product manager who wants to utilize parameters collected by Adobe Target to personalize experiences for customers but wants an approach that is also automatic?</div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Auto Target",
+      },
+      {
+        correct: false,
+        text: "Multivariate Testing",
+      },
+      {
+        correct: false,
+        text: "Auto Allocate",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 37,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">Which activity type should be used when a Practitioner wants to use a custom code served from AEM fragments to improve customers' experiences based on their profiles?</div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Auto Target",
+      },
+      {
+        correct: false,
+        text: "Automated Personalization",
+      },
+      {
+        correct: false,
+        text: "Auto Allocate",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 38,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">Which recommendation logic should be used when an Adobe Target Business Practitioner wants to make recommendations only based on the item the visitor is currently viewing on the company's retail website?</div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Customers who bought this item also bought these items",
+      },
+      {
+        correct: true,
+        text: "Items with similar attributes",
+      },
+      {
+        correct: false,
+        text: "The most-viewed items in a particular category",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 39,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">Which type of recommendation algorithm should be used when an Adobe Target Business Practitioner wants to make recommendations based on the items that are from the visitor's favorite category?</div>`,
+    answers: [
+      {
+        correct: false,
+        text: "User-based",
+      },
+      {
+        correct: false,
+        text: "Item-based",
+      },
+      {
+        correct: true,
+        text: "Custom criteria",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 40,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner would like to determine how different types of visitors respond to the same content.<p></p><p></p><p>Which type of audience can be used for this purpose?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Targeting",
+      },
+      {
+        correct: false,
+        text: "Analyzing",
+      },
+      {
+        correct: true,
+        text: "Reporting",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 41,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner wants to create an audience that will be used only once and not be stored in the Audiences Library.<p></p><p></p><p>Which type of the audience can be used for this purpose?</p></div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Activity only",
+      },
+      {
+        correct: false,
+        text: "Visit only",
+      },
+      {
+        correct: false,
+        text: "Report only",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 42,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner needs to configure multiple activities which are assigned to the same location with the same audience.<p></p><p></p><p>Which activity setting can be used for this purpose? </p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Parent",
+      },
+      {
+        correct: true,
+        text: "Priority",
+      },
+      {
+        correct: false,
+        text: "Display order",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 43,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner set the reporting solution to Analytics and wants to create a goal metric.<p></p><p></p><p>Which metric will be available in this configuration? </p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Page Views",
+      },
+      {
+        correct: false,
+        text: "Custom Scoring",
+      },
+      {
+        correct: true,
+        text: "Conversion",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 44,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner has set up an A/B Test on the homepage of a major retailer to identify which type of promotions would generate decent engagement on the website. The test includes different promotional placements such as Free Shipping, BOGO, % OFF, and $$ OFF on the Hero Banner, Header Link, Footer Link, and Sidebar. The test audience will include users from both the U.S. and Canada. Before going live with the activity, the Practitionerwould like to share the Preview URL links with a team member in Canada for testing in order to confirm whether someone from Canada can see the page, and thus qualify for the test.<p></p><p></p><p>Which action needs to be taken to accomplish this task?</p></div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Set the activity to live and use multiple audiences, including QA and an actual audience to validate.",
+      },
+      {
+        correct: false,
+        text: "Use the Target QA bookmarklet to force out of Activity QA and view the website as a typical visitor.",
+      },
+      {
+        correct: false,
+        text: "Generate a Preview URL to validate all audience qualifications by default.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 45,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner needs to apply a different audience from the Audience Library to the QA activity. <p></p><p></p><p>Which action needs to be taken to complete this task?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Deactivate the activity, create a new activity with new goals, and then use the same links to share.",
+      },
+      {
+        correct: false,
+        text: "Isolate the activity from other live activities, and then update the audience conditions.",
+      },
+      {
+        correct: true,
+        text: "Edit the activity, and then generate the new links to share.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 46,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner would like to check if the home page URL has been used in multiple activities at the same time.<p></p><p> </p><p>Where should the Practitioner check to locate this information?</p></div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Collision Report",
+      },
+      {
+        correct: false,
+        text: "Change Log Report",
+      },
+      {
+        correct: false,
+        text: "Results Report",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 47,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner is reviewing the activities list from the Adobe Target Interface.  <p></p><p></p><p>Which action can be taken on an activity with live status? </p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Archive",
+      },
+      {
+        correct: true,
+        text: "Edit",
+      },
+      {
+        correct: false,
+        text: "Activate",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 48,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner would like to display content that is more relevant and attractive to each visitor during their browsing sessions. To meet this goal, the Practitioner is interested in knowing whether the browser type, location, or time of day of visit are more frequently used by Adobe Target's personalization model.<p></p><p> </p><p>Which report should the Practitioner use to obtain this information?</p></div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Importance Attributes",
+      },
+      {
+        correct: false,
+        text: "Experience Performance",
+      },
+      {
+        correct: false,
+        text: "Automated Segments",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 49,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner has set up an A/B Test, and the primary goal of the activity is to increase revenue. The test is targeted to the returning users landing from the display campaign, "Your saved basket". <p></p><p></p><p>The first report was sent to stakeholders, and they found that the number of returning visitors in the report has been very high, but the revenue increase has not been sufficient. One of the stockholders wants a report showing the returning users who have spent more than $1,000. </p><p></p><p>How should the Practitioner share this information from Target?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Add an Audience/Target condition to include returning visitors with order value > $1000.",
+      },
+      {
+        correct: false,
+        text: "Download report data in a .csv format to filter orders with value > $1000.",
+      },
+      {
+        correct: true,
+        text: "Add a reporting segment to include returning visitors with order value > $1000.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 50,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner is making use of a significance calculator to estimate the amount of time that a test will take to yield results. During the setup and reporting of the results, the Practitioner focuses on the measure that will indicate whether an experience's success was due to chance.<p></p><p></p><p>Which measure is being focused on by the Practitioner?</p></div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Confidence Level",
+      },
+      {
+        correct: false,
+        text: "Statistical Power",
+      },
+      {
+        correct: false,
+        text: "Confidence Interval",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 51,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner is making use of a significance calculator to estimate the amount of time for a test to yield results. During the setup and reporting of the results, the Practitioner would like to focus on the ability or sensitivity of the experiment to detect changes.<p></p><p></p><p>Which measure is the focus of this Practitioner?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Statistical Significance",
+      },
+      {
+        correct: true,
+        text: "Minimum Detectable Lift",
+      },
+      {
+        correct: false,
+        text: "Statistical Power",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 52,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">The figure below shows five offers that have the same long-term conversion rate. Offer B had a poor conversion rate for the first 2,000 visitors, and it takes a long time before the estimated conversion rate returns to the true long-term rate.<p></p><p></p><p></p><p><a href="https://content.gmetrix.net/questions/images/Adobe%20Certified%20Expert/AD4-E406AdobeTargetBusinessPractitioner/E406-3-03-1.png" data-lightbox="instruction"><img alt="" src="https://content.gmetrix.net/questions/images/Adobe%20Certified%20Expert/AD4-E406AdobeTargetBusinessPractitioner/E406-3-03-1.png" data-uw-rm-alt-original=""></a></p><p></p><p></p><p>This phenomenon is known as "regression to the mean." </p><p></p><p>What is the best way to avoid this issue?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Reduce the number of visitors per offer, and then run the test for a smaller amount of time.",
+      },
+      {
+        correct: false,
+        text: "Limit the number of offers per run, and then run the test with the same number of visitors.",
+      },
+      {
+        correct: true,
+        text: "Determine an adequate number of visitors before running the test, and then let the test run until all visitors have been exposed to the offers.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 53,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">The figure below shows two offers that two different visitors see at the same time on a Sunday afternoon. The consideration period for Offer A is short, and the visitor converts later that day. However, Offer B has a longer consideration period, and the visitor who saw Offer B thinks about the offer for a while and ends up converting Monday morning. If the test is stopped Sunday night, the conversion associated with Offer A is counted toward Offer A's conversion metric, but the conversion associated with Offer B is not counted toward Offer B's conversion metric. This puts Offer B at a significant disadvantage.<p></p><p></p><p></p><p><a href="https://content.gmetrix.net/questions/images/Adobe%20Certified%20Expert/AD4-E406AdobeTargetBusinessPractitioner/E406-3-03-2.png" data-lightbox="instruction"><img alt="" src="https://content.gmetrix.net/questions/images/Adobe%20Certified%20Expert/AD4-E406AdobeTargetBusinessPractitioner/E406-3-03-2.png" data-uw-rm-alt-original=""></a></p><p></p><p></p><p>Which strategy will avoid this pitfall?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Reduce the number of visitors for both of the offers to ensure the that the test executes properly.",
+      },
+      {
+        correct: false,
+        text: "Change the consideration period for both of the offers to the same length, which will eventually put both on same advantage.",
+      },
+      {
+        correct: true,
+        text: "Allow some time for visitors who were exposed to the test offers to convert after a new entry to the test has been stopped.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 54,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">What is the difference between an Automated Personalization summary report and an Auto-Target report?</div>`,
+    answers: [
+      {
+        correct: false,
+        text: "The amount of traffic per experience required to build an Auto-Target model is more than the amount of traffic required by the Automated Personalization model.",
+      },
+      {
+        correct: true,
+        text: "There are more experiences in an Automated Personalization activity report than in an Auto-Target activity report.",
+      },
+      {
+        correct: false,
+        text: "An Automated Personalization activity report allows multiple changes within one experience, but the Auto-Target report only allows a single change.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 55,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner has set up six different experiences in Adobe Target and would like to know which areas on the home page are most likely to improve conversion, and thus increase revenue. Stakeholders want to know the activity's results. Preliminary results are shown in the following Experience Performance (MVT) report:  <p></p><p></p><p></p><p><a href="https://content.gmetrix.net/questions/images/Adobe%20Certified%20Expert/AD4-E406AdobeTargetBusinessPractitioner/E406-3-05-1.jpg" data-lightbox="instruction"><img alt="" src="https://content.gmetrix.net/questions/images/Adobe%20Certified%20Expert/AD4-E406AdobeTargetBusinessPractitioner/E406-3-05-1.jpg" data-uw-rm-alt-original=""></a></p><p></p><p></p><p>Which action should the Practitioner take when analyzing the current results of this activity?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Declare Experience E the winner, since it shows positive lift and high significance.",
+      },
+      {
+        correct: true,
+        text: "Allow the activity to continue running to gather more data since results are inconclusive.",
+      },
+      {
+        correct: false,
+        text: "Eliminate Experience D and H as under-performing challengers, and then select either Experience B, C, or E as the winner.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 56,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;"><p>An Adobe Target Business Practitioner would like to know which element of a homepage can best improve conversions. The three elements (banner image, promo text, and call to action), including their controls, were targeted in a Multivariate Test (MVT). The results of this test are shown in the following MVT report:</p>
+
+    <p><a href="https://content.gmetrix.net/questions/images/Adobe%20Certified%20Expert/AD4-E406AdobeTargetBusinessPractitioner/E406-3-05-2.png" data-lightbox="instruction"><img alt="" src="https://content.gmetrix.net/questions/images/Adobe%20Certified%20Expert/AD4-E406AdobeTargetBusinessPractitioner/E406-3-05-2.png" style="width: 624px; height: 349px;" data-uw-rm-alt-original=""></a></p>
+
+    <p>Which of the elements that had added offers resulted in the most conversions?</p>
+    </div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Image",
+      },
+      {
+        correct: true,
+        text: "Call to Action",
+      },
+      {
+        correct: false,
+        text: "Promo Text",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 57,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner is completing an A/B Test and notices that traffic distribution remains fixed even after some experiences are observed as outperforming others. The Practitioner also notes that the whole activity must run its entire course before a winner can be decided. This situation increases the cost and must be resolved.<p></p><p></p><p>Which type of activity can be used to solve this problem?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Auto-Target",
+      },
+      {
+        correct: true,
+        text: "Auto-Allocate",
+      },
+      {
+        correct: false,
+        text: "Automated Personalization",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 58,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner wants to rank-order how every experience has performed relative to the others.<p></p><p></p><p>How should this goal be achieved?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Experience Target",
+      },
+      {
+        correct: false,
+        text: "Auto-Allocate",
+      },
+      {
+        correct: true,
+        text: "Manual A/B Test",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 59,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner is completing an A/B Test and wants to be sure that the variations that perform best are being seen by visitors. The Practitioner is concerned because this A/B activity run is happening during a core business moment, which is a product lunch time.<p></p><p></p><p>Which type of A/B Testing activity should be used for this purpose?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Auto Target",
+      },
+      {
+        correct: false,
+        text: "Manual A/B Test",
+      },
+      {
+        correct: true,
+        text: "Auto-Allocate",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 60,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner observes that an activity was delivered, but the expected result is not being seen. The Practitioner decides to enable Target Console Logging to check the logs to gain insight into the problem.<p></p><p></p><p>Which logs should be checked?</p></div>`,
+    answers: [
+      {
+        correct: true,
+        text: "The logs on the console of the browser",
+      },
+      {
+        correct: false,
+        text: "The logs on the network tab of the debugger",
+      },
+      {
+        correct: false,
+        text: "The logs on log tab of the debugger",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 61,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">An Adobe Target Business Practitioner wants to expose debugging statements to the browser for at.js version older than 0.9.6.<p></p><p></p><p>What is the correct way to complete this task?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Enable Target Console Logging on Tools Tab of the debugger.",
+      },
+      {
+        correct: false,
+        text: "Write a custom Target debugger.",
+      },
+      {
+        correct: true,
+        text: "Add ?mboxDebug=true query string parameter to the URL.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 62,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">A product owner is testing different category pages on an eCommerce website but is afraid that the results could be marred by a Black Friday sale which will be held at the end of November. The owner does not want to stop the test during the sale.<p></p><p></p><p>Which solution should the Practitioner recommend?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Navigate to reports, select settings, and then exclude the extreme values from the control experience.",
+      },
+      {
+        correct: true,
+        text: 'Navigate to reports, select settings, and then set exclude extreme values to "True".',
+      },
+      {
+        correct: false,
+        text: "Navigate to reports, download the reports, and then exclude extreme sales from the control experience.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 63,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;">A product manager has been running an A/B Test on auto allocate and needs to set the appropriate amount of metric that is required to ensure lift bounds are displayed.<p></p><p></p><p>What is the appropriate amount that should be used for this purpose?</p></div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Minimum 100 Conversions",
+      },
+      {
+        correct: false,
+        text: "40% Lift",
+      },
+      {
+        correct: true,
+        text: "60% Confidence",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 64,
+    choose: 2,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;"><p>A product owner wants to personalize the user experience based on the visit number for that user and has configured the visit number using profile scripts. The Practitioner would now like to use a Target feature to QA accurate functioning of these profile scripts.</p>
+
+    <p>Which two features can be used for this purpose? (Choose two.)</p>
+    </div>`,
+    answers: [
+      {
+        correct: true,
+        text: "mbox trace",
+      },
+      {
+        correct: false,
+        text: "Property tokens",
+      },
+      {
+        correct: true,
+        text: "Response tokens",
+      },
+      {
+        correct: false,
+        text: "Activity tokens",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 65,
+    choose: 2,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;"><p>A company recently bought Target Premium to drive personalization of its web products. The Practitioner has configured Target into separate properties to be used with each individual product. An A/B Test has been set up, and during QA, it is realized that the experience is not rendering as expected.</p>
+
+    <p>Which two steps are part of the troubleshooting process? (Choose two.)</p>
+    </div>`,
+    answers: [
+      {
+        correct: true,
+        text: "Troubleshoot the activity using mboxTrace.",
+      },
+      {
+        correct: true,
+        text: "Check with the developer team to ensure that a property token is present as part of each target call.",
+      },
+      {
+        correct: false,
+        text: "Filter the network log using b/ss to see if network calls are firing.",
+      },
+      {
+        correct: false,
+        text: "Contact the Engineering teams.",
+      },
+    ],
+    notes: ``,
+  },
+  {
+    number: 66,
+    choose: 1,
+    question: `<div id="InstructionText" class="instructionText noSelect" style="font-size: 17px;"><p>An Adobe Target Business Practitioner wants to launch an A/B Test for new users from Safari browsers. In which two ways can an audience be created for this test?</p>
+    </div>`,
+    answers: [
+      {
+        correct: false,
+        text: "Create a segment in Adobe Analytics, with browser type to be Safari or Firefox, and save.",
+      },
+      {
+        correct: true,
+        text: "Create a segment in Adobe Analytics, with browser type to be Safari or Firefox, click save, and share it with experience cloud.",
+      },
+      {
+        correct: true,
+        text: 'Combine multiple audiences for each browser, separated with the operator "AND".',
+      },
+      {
+        correct: false,
+        text: 'Combine multiple audiences for each browser, separated with the operator "OR".',
+      },
+    ],
+    notes: ``,
+  },
 ];
