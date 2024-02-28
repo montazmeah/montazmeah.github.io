@@ -77,7 +77,7 @@ let questions = [
 </div>
 <p>These parameters are automatically added to the redirect URLs when using the built-in redirect offers in the VEC and Form-Based Experience Composer when the Visitor Id service is implemented on the page. If you are using your own custom redirect code in the VEC or Form-Based Composer, you must be sure to pass these parameters with your custom code.</p>
 </details>
-<p>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html?lang=en">https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html?lang=en</a>
+<i>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html?lang=en">https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html?lang=en</a></i>
     `,
   },
   {
@@ -99,7 +99,7 @@ let questions = [
       },
     ],
     notes: `
-    
+    <h2 id="email%3A-implement-target" tabindex="-1"><mark>Email:</mark> implement Target</h2>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -113,8 +113,8 @@ let questions = [
         </thead>
         <tbody>
             <tr>
-            <th scope="row">AdBox</th>
-            <td>Returns different images to the ad</td>
+            <th scope="row"><mark>AdBox</mark></th>
+            <td><mark>Returns different images to the ad</mark></td>
             <td>To change the content of an ad</td>
             <td><code>clientcode​.tt.​omtrdc​.net/​m2​/​clientcode/ubox/​image?</code></td>
             <td>redirect offer</td>
@@ -132,7 +132,7 @@ let questions = [
             
         </tbody>
     </table>
-    <p>source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target-dev/developer/implement-email/overview.html?lang=en">https://experienceleague.adobe.com/docs/target-dev/developer/implement-email/overview.html?lang=en</a></p>
+    <i>source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target-dev/developer/implement-email/overview.html?lang=en">https://experienceleague.adobe.com/docs/target-dev/developer/implement-email/overview.html?lang=en</a></i>
     `,
   },
   {
@@ -157,7 +157,22 @@ let questions = [
         text: "Mbox parameters",
       },
     ],
-    notes: ``,
+    notes: `
+    <h1 id="automated-personalization-(ap)" tabindex="-1"><mark>Automated Personalization (AP)</mark></h1>
+    <h2 id="target-automatically-uses-all-adobe-experience-cloud-shared-audiences-to-build-the-personalization-models" tabindex="-1">Target automatically uses all Adobe <mark>Experience Cloud</mark> shared <mark>audiences</mark> to build the personalization models</h2>
+    <ul>
+      <li>You don’t need to do anything specific to add audiences to the model. For information about using Experience Cloud Audiences with Target, see <a href="/docs/target/using/integrate/mmp.html?lang=en">Experience Cloud Audiences</a>.</li>
+    </ul>
+    <h2 id="marketers-can-upload-offline-data%2C-propensity-scores%2C-or-other-custom-data-to-build-personalization-models" tabindex="-1">Marketers can upload offline data, propensity scores, or other custom data to build personalization models</h2>
+    <p>Offline data, such as CRM information or customer-churn propensity scores, can be incredibly valuable when building personalization models. There are several ways to input data in Automated Personalization (AP) and Auto-Target personalization algorithms.</p>
+    <ul>
+      <li><a href="/docs/target-dev/developer/implementation/methods/methods-to-get-data-into-target.html?lang=en" target="_blank"><mark>mbox parameters</mark></a></li>
+      <li><a href="/docs/target-dev/developer/implementation/methods/methods-to-get-data-into-target.html?lang=en" target="_blank">Profile parameters</a></li>
+      <li><a href="/docs/target-dev/developer/implementation/methods/methods-to-get-data-into-target.html?lang=en" target="_blank">Server-side APIs for profile update</a></li>
+    </ul>
+    <p>For information about the data automatically collected and used by Automated Personalization and Auto-Target personalization algorithms, see <a href="/docs/target/using/activities/automated-personalization/ap-data.html?lang=en">Automated Personalization Data Collection</a>.</p>
+    <i>Source: <a href="https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=en" target="_blank">https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=en</a></i>
+    `,
   },
   {
     number: 5,
@@ -265,13 +280,13 @@ let questions = [
       },
     ],
     notes: `
-    <p>source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target-dev/developer/implement-email/testing-email-image-adbox.html?lang=en">https://experienceleague.adobe.com/docs/target-dev/developer/implement-email/testing-email-image-adbox.html?lang=en</a></p>
+    <i>source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target-dev/developer/implement-email/testing-email-image-adbox.html?lang=en">https://experienceleague.adobe.com/docs/target-dev/developer/implement-email/testing-email-image-adbox.html?lang=en</a></i>
     <div class="docs-main">
   <!-- Docs page metadata-->
-  <h4 id="test-an-email-image-adbox" tabindex="-1">Test an email image Adbox</h4>
+  <h4 id="test-an-email-image-adbox" tabindex="-1">Test an email image <mark>Adbox</mark></h4>
 
   
-  <p>Dynamically test images in email, and even change those images on the fly when someone opens the email.</p>
+  <p><mark>Dynamically test images in email, and even change those images on the fly when someone opens the email.</mark></p>
 <p>Redirectors can be used in emails to track clicks and dynamically control which landing page people reach.</p>
 <p>Email image testing is achieved through using modified versions of adboxes. Because email clients do not allow cookies to be set, a unique identifier must be generated for each email. This number is appended to the adbox URL and to any redirectors used in the email to track clicks from the email.</p>
 <div class="extension note">
@@ -579,7 +594,7 @@ mboxPC={123456}" border=:"0"/&gt;
     <ul>
       <li>tnta payload</li>
     </ul>
-    <p>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=en">https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=en</a>
+    <i>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=en">https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=en</a></i>
     `,
   },
   {
@@ -635,7 +650,7 @@ mboxPC={123456}" border=:"0"/&gt;
     
   </tbody>
 </table>
-<p>Source: <a href="https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en">https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en</a></p>
+<i>Source: <a href="https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en">https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en</a></i>
 
     
     `,
@@ -766,7 +781,7 @@ mboxPC={123456}" border=:"0"/&gt;
       <li>A company that sells eyeglasses stores a visitor’s favorite frame color as “walnut.” For that specific visitor, recommendation are set up to return only eyeglass frames that match “walnut” in color.</li>
       <li>A profile parameter can be defined for the clothing size (e.g., Small, Medium, or Large) of a visitor as they navigate your company’s web site. A recommendation can be set up to match that profile parameter and return products specific only to the user’s preferred clothing size.</li>
     </ul>
-    <p>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/profile-attribute-matching.html?lang=en#:~:text=Filter%20dynamically%20in%20Adobe%20Target,as%20size%20or%20favorite%20brand.">https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/profile-attribute-matching.html?lang=en#:~:text=Filter%20dynamically%20in%20Adobe%20Target,as%20size%20or%20favorite%20brand.</a>
+    <i>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/profile-attribute-matching.html?lang=en#:~:text=Filter%20dynamically%20in%20Adobe%20Target,as%20size%20or%20favorite%20brand.">https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/profile-attribute-matching.html?lang=en#:~:text=Filter%20dynamically%20in%20Adobe%20Target,as%20size%20or%20favorite%20brand.</a></i>
     `,
   },
   {
