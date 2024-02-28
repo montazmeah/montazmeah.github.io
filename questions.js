@@ -49,7 +49,36 @@ let questions = [
         text: "adobe_mc_ref",
       },
     ],
-    notes: ``,
+    notes: `
+    <h2 id="section_BA73E8B3CFCC4CBEB5BE3F76B2BC8682" tabindex="-1">What are the new query string parameters added to the redirect URLs?</h2>
+    <details open="">
+<summary><span class="details-marker">&nbsp;</span>Answer</summary><p>The following query string parameters are associated with redirect offers:</p>
+<div class="table-container">
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Parameter</th>
+      <th scope="col">Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-title="Parameter"><code>adobe_mc_sdid</code></td>
+      <td data-title="Description">The <code>adobe_mc_sdid</code> parameter passes the Supplemental Data Id (SDID) and Experience Cloud Org Id from the default page to the new page. These IDs allow A4T to “stitch” together the Target request on the default page with the Analytic request on the new page.<br>The expected format to pass sdid in the url (for hybrid apps or from one app to the website or one website to another) is ex. adobe_mc_sdid=SDID=123</td>
+    </tr>
+    <tr>
+<td data-title="Parameter"><code>adobe_mc_ref</code></td>
+<td data-title="Description">The <code>adobe_mc_ref</code> parameter passes the referring URL of the default page to the new page. When used with  AppMeasurement.js version 2.1 (or later),  Analytics uses this parameter value as the referring URL on the new page.</td>
+</tr>
+  </tbody>
+</table>
+</div>
+<p>These parameters are automatically added to the redirect URLs when using the built-in redirect offers in the VEC and Form-Based Experience Composer when the Visitor Id service is implemented on the page. If you are using your own custom redirect code in the VEC or Form-Based Composer, you must be sure to pass these parameters with your custom code.</p>
+</details>
+<p>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html?lang=en">https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html?lang=en</a>
+    `,
   },
   {
     number: 3,
@@ -273,27 +302,27 @@ mboxPC={123456}" border=:"0"/&gt;
   </thead>
   <tbody>
     <tr>
-      <th scope="row">clientcode</th>
+      <td>clientcode</td>
       <td>Your company’s client code. Find this in your at.js listed as <code>clientCode='yourclientcode'</code>. This is all lower case and has no special characters.</td>
     </tr>
     <tr>
-      <th scope="row">image</th>
+      <td>image</td>
       <td>The offer type. It is always “image” for graphic ads and “page” for redirectors.</td>
     </tr>
     <tr>
-      <th scope="row">email_header</th>
+      <td>email_header</td>
       <td>The name of the adbox.</td>
     </tr>
     <tr>
-      <th scope="row"><code>mboxDefault=http%3A%2F%2Fwww.domain.com%2Fheader.jpg	</code</th>
+      <td><code>mboxDefault=http%3A%2F%2Fwww.domain.com%2Fheader.jpg	</code</td>
       <td>Required. Replace the URL with appropriate default content for your adbox. This must be an absolute reference and must be URL encoded.</td>
     </tr>
     <tr>
-      <th scope="row"><code>mboxXDomain=disabled</code</th>
+      <td><code>mboxXDomain=disabled</code</td>
       <td>Tells Target to not attempt to set a cookie.</td>
     </tr>
     <tr>
-      <th scope="row"><code>mboxSession=123456</code> and <code>mboxPC=123456</code</th>
+      <td><code>mboxSession=123456</code> and <code>mboxPC=123456</code</td>
       <td>Two values required by Target to merge this user’s profile with the existing profile for your site. 123456 is the unique identifier generated per email. Dynamically insert this value into every adbox and redirector URL. This number must be unique for each email sent to each person. If a weekly email is sent to 1,000 people, 1,000 unique IDs need to be generated.
       The unique identifier per email needs to be assigned to the mboxSession and mboxPC in each adbox and redirector URL. The recommended format for this identifier is timestamp-NNNNN where NNNNN is a random 5-digit number, but any alphanumeric format will work. Some mass e-mail services and any programming language are capable of generating this unique identifier.
       </td>
@@ -523,7 +552,35 @@ mboxPC={123456}" border=:"0"/&gt;
         text: "It logs data to be sent to the Adobe Experience Platform.",
       },
     ],
-    notes: ``,
+    notes: `
+    <h2 id="bots" tabindex="-1">Bots</h2>
+    <p>Adobe Target uses the <a href="https://deviceatlas.com/device-data/user-agent-tester/">DeviceAtlas</a> metric “isRobot” to detect known bots based on the User Agent String passed in the Request Header.</p>
+    <div class="extension note">
+      <div>NOTE</div>
+      <div>
+        <p>For Server-Side requests, the value passed in the <a href="https://developers.adobetarget.com/api/delivery-api/#tag/Delivery-API">Request’s “Context” node</a> is given precedence over the User Agent String for bot detection.</p>
+      </div>
+    </div>
+    <p>Traffic that is identified as being generated by a bot is still served content. Bots are treated like a regular user to ensure that Target is in line with SEO guidelines. Using bot traffic can skew A/B tests or personalization algorithms if they are treated like normal users. Therefore, if a known bot is detected in your Target activity, the traffic is treated slightly differently. Removing bot traffic provide a more accurate measurement of user activity.</p>
+    <p>Specifically, for known bot traffic <mark>Target does not:</mark></p>
+    <ul>
+      <li><mark>Create or retrieve a visitor profile</mark></li>
+      <li>Log any profile attributes or execute profile scripts</li>
+      <li>Look up Adobe Audience Manager (AAM) segments (if applicable)</li>
+      <li>Use bot traffic in modeling and serving personalized content for Recommendations, Auto-Target, Automated Personalization, or Auto-Allocate activities</li>
+      <li><mark>Log an activity visit for reporting</mark></li>
+      <li>Log data to be sent to the Adobe Experience Cloud platform</li>
+    </ul>
+    <p>For known bot traffic when using Analytics for Target (A4T), Target does not:</p>
+    <ul>
+      <li>Send events to Analytics</li>
+    </ul>
+    <p>For known bot traffic when using client_side logging, Target does not return:</p>
+    <ul>
+      <li>tnta payload</li>
+    </ul>
+    <p>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=en">https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=en</a>
+    `,
   },
   {
     number: 20,
@@ -700,7 +757,17 @@ mboxPC={123456}" border=:"0"/&gt;
         text: `Add a "Profile Attribute Matching" filtering rule to the Criteria to recommend packages that match the viewer's membership level.`,
       },
     ],
-    notes: ``,
+    notes: `
+    <h2 id="profile-attribute-matching" tabindex="-1">Profile Attribute matching</h2>
+    <p><mark>Filter dynamically in Adobe Target Recommendations by comparing items (entities) against a value in the user’s profile.</mark></p>
+    <p><mark>Use Profile Attribute Matching when you want to show recommendations that match a value stored in the visitor’s profile, such as size or favorite brand.</mark></p>
+    <p>The following scenarios show how you can use Profile Attribute Matching:</p>
+    <ul>
+      <li>A company that sells eyeglasses stores a visitor’s favorite frame color as “walnut.” For that specific visitor, recommendation are set up to return only eyeglass frames that match “walnut” in color.</li>
+      <li>A profile parameter can be defined for the clothing size (e.g., Small, Medium, or Large) of a visitor as they navigate your company’s web site. A recommendation can be set up to match that profile parameter and return products specific only to the user’s preferred clothing size.</li>
+    </ul>
+    <p>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/profile-attribute-matching.html?lang=en#:~:text=Filter%20dynamically%20in%20Adobe%20Target,as%20size%20or%20favorite%20brand.">https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/profile-attribute-matching.html?lang=en#:~:text=Filter%20dynamically%20in%20Adobe%20Target,as%20size%20or%20favorite%20brand.</a>
+    `,
   },
   {
     number: 26,
