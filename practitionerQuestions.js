@@ -17,7 +17,85 @@ let questions = [
         text: "Use Experience Targeting followed by Recommendations",
       },
     ],
-    notes: ``,
+    notes: `
+    <i>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=en">https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=en</a></i>
+    <div class="docs-main">
+  <!-- Docs page metadata-->
+  <h1 id="multivariate-test-overview" tabindex="-1">
+    Multivariate Test overview
+  </h1>
+
+  <p>
+    A Multivariate Test (MVT) activity in Adobe Target compares combinations of
+    offers in elements on a page to determine which combination performs the
+    best for a specific audience. A Multivariate Test activity also helps to
+    identify which element most impacts the activity’s success.
+  </p>
+  <p>
+    Multivariate testing helps you discover the relative influence specific
+    elements have on conversion, compared to other elements on the page.
+    Multivariate testing can also help you refine a combination of elements that
+    have been shown to be effective.
+  </p>
+  <p>
+    One advantage a Multivariate Test provides compared to an A/B test is the
+    ability to show which elements on your page have the greatest influence on
+    conversion. This advantage is also known as the “main effect.” This
+    information is useful, for example, to help you determine where to place
+    content that you want to receive the most attention.
+  </p>
+  <p>
+    Multivariate Test activities also help you find compound effects between two
+    or more elements on a page. For example, a particular ad might produce more
+    conversions when combined with a certain banner or hero image. This is also
+    known as the “interaction effect.”
+  </p>
+  <p>
+    Target uses full-factorial multivariate tests to help you optimize your
+    content. A full-factorial multivariate test examines all possible
+    combinations of content with equal probability. For example, if you have two
+    page elements with three offers each, there are nine possible combinations
+    (3x3). Three elements, with two containing three possible offers and one
+    with two offers, provide 18 options (3x3x2).
+  </p>
+  <p>
+    In Target, each combination is one experience. The Multivariate Test
+    compares each experience so that you can learn which combinations are the
+    most successful. At the same time, data is collected and analyzed to
+    understand how each location and the offers influence the success metric.
+  </p>
+  <p>
+    <img style="width:100%;"
+      src="https://experienceleague.adobe.com/docs/target/assets/multivariate.png?lang=en"
+      alt="multivariate image"
+    />
+  </p>
+  <p>
+    Because of the number of combinations that can be generated, a Multivariate
+    Test requires more time and traffic than an A/B test. The page must receive
+    enough traffic to produce statistically significant results for each
+    experience. To obtain useful results, you must understand the amount of
+    traffic your page receives and test the optimal number of combinations for
+    the right amount of time to get the required results.
+  </p>
+  <p>
+    Target’s
+    <a
+      href="/docs/target/using/activities/multivariate-test/create-mvt/traffic-estimator.html?lang=en#task_71AA6922AFD447EA8C5E610A78ABA714"
+      >Traffic Estimator</a
+    >
+    can help you design a test that works with your traffic. Before you use the
+    Traffic Estimator, you should have good statistics showing the number of
+    impressions and conversions your site normally receives. Consider your
+    traffic levels per day. The more experiences in an activity, the more
+    traffic the activity must include or the longer your activity must run. If
+    your amount of traffic isn’t high, you should test a few combinations;
+    otherwise, the amount of time required to produce meaningful test results
+    might be too long to be useful.
+  </p>
+</div>
+
+    `,
   },
   {
     number: 2,

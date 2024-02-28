@@ -192,7 +192,38 @@ let questions = [
         text: "Analytics Segments",
       },
     ],
-    notes: ``,
+    notes: `
+    <div class="docs-main">
+  <!-- Docs page metadata-->
+  <h1 id="script-profile-attributes" tabindex="-1">Script profile attributes</h1>
+
+  <p>Script profile attributes are name/value pairs defined in the Adobe Target solution. The value is determined from executing a JavaScript snippet on Target’s server per server call.</p>
+<p>Users write small code snippets that execute per mbox call, and before a visitor is evaluated for audience and activity membership.</p>
+<h2 id="format" tabindex="-1">Format</h2>
+<p>Script profile attributes are created in the Audiences section of Target. Any attribute name is valid, and the value is the result of a JavaScript function written by the Target user. The attribute name is automatically prefixed by " user. " in Target to distinguish them from in-page profile attributes.</p>
+<p>The code snippet is written in the Rhino JS language and can reference tokens and other values.</p>
+<h2 id="example-use-cases" tabindex="-1">Example Use Cases</h2>
+<ul>
+<li><strong>Cart Abandonment</strong>: When the visitor reaches the shopping cart, set the profile script to 1. When the visitor converts, reset it to 0. If the value =1, then the visitor has an item in the cart.</li>
+<li><strong>Visit Count</strong>: On every new visit, increment the count by 1 to keep track of how often a visitor returns to the site.</li>
+</ul>
+<h2 id="benefits-of-method" tabindex="-1">Benefits of method</h2>
+<p>Requires no page code updates.</p>
+<p>Executes before audience and activity membership decisions, so these profile script attributes can affect membership on a single server call.</p>
+<p>Can be very robust. As many as 2,000 instructions can be executed per script.</p>
+<h2 id="caveats" tabindex="-1">Caveats</h2>
+<p>Requires JavaScript knowledge.</p>
+<p>The execution order of profile scripts cannot be guaranteed, so they cannot rely on each other.</p>
+<p>Can be difficult to debug.</p>
+<h2 id="code-examples" tabindex="-1">Code examples</h2>
+<p>Profile scripts are quite flexible:</p>
+<div class="code-toolbar"><code class="language-none">user.purchase_recency: var dayInMillis = 3600 * 24 * 1000; if (mbox.name == 'orderThankyouPage') {  user.setLocal('lastPurchaseTime', new Date().getTime()); } var lastPurchaseTime = user.getLocal('lastPurchaseTime'); if (lastPurchaseTime) {  return ((new Date()).getTime()-lastPurchaseTime)/dayInMillis; }
+</code></div>
+<h3 id="links-to-relevant-information" tabindex="-1">Links to relevant information</h3>
+<p><a href="https://experienceleague.adobe.com/docs/target-dev/developer/implementation/methods/script-profile-attributes.html?lang=en">Profile Script Attributes</a></p>
+
+</div>
+    `,
   },
   {
     number: 6,
@@ -212,7 +243,28 @@ let questions = [
         text: "Profile Script",
       },
     ],
-    notes: ``,
+    notes: `
+    <div class="docs-main">
+  <!-- Docs page metadata-->
+  <p><span class="sp-badge-wrapper"><sp-badge size="s" style="cursor:inherit !important" variant="informative" dir="ltr">premium</sp-badge></span></p>
+<h1 id="create-profile-scripts-in-adobe-target" tabindex="-1">Create Profile Scripts in Adobe Target</h1>
+
+  
+  <h2 id="description" tabindex="-1">Description</h2>
+<p>In this video, you learn how to:</p>
+<ul>
+<li>Describe profile scripts</li>
+<li>Create profile scripts</li>
+</ul>
+<h2 id="intended-audience" tabindex="-1">Intended Audience</h2>
+<ul>
+<li>Business Practitioner</li>
+<li>Developer</li>
+</ul>
+<div class="extension video"><iframe allowfullscreen="" embedded-video="" src="https://video.tv.adobe.com/v/17394/?quality=12" style="width: 100%; height: 100%; min-height: 900px"><source src="https://video.tv.adobe.com/v/17394/?quality=12" type="" /><p>Your browser does not support the iframe element.</p></iframe></div>
+</div>
+<i>Source: <a href="https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-profile-scripts.html?lang=en">https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-profile-scripts.html?lang=en</a></i>
+    `,
   },
   {
     number: 7,
@@ -232,7 +284,37 @@ let questions = [
         text: "Increase the Target profile expiration from the default of 14 days to a value greater than one month.",
       },
     ],
-    notes: ``,
+    notes: `
+    <i>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=en">https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=en</a></i>
+    <div data-id="body">
+          <h1 id="title"></h1>
+          <!-- docs-main view start -->
+
+<div class="docs-main">
+  <!-- Docs page metadata-->
+  <h1 id="visitor-profile-lifetime" tabindex="-1">Visitor profile lifetime</h1>
+
+  
+  <p>By default, a visitor profile in Adobe Target expires after 14 days of inactivity for that visitor. This profile lifetime can be extended.</p>
+<p><a href="/docs/target/using/cmp-resources-and-contact-information.html?lang=en#reference_ACA3391A00EF467B87930A450050077C">Contact Client Care or your Adobe consultant</a> to extend the profile lifetime at no additional cost. The lifetime can be set to as many as 90 days.</p>
+<p>You do not need to download a new Platform Web SDK file or at.js file if your profile is extended beyond the default.</p>
+<p>The expiration date is not reset for existing profiles. If a previous visitor does not return for 15 days, that profile expires. If a previous visitor returns before the original two-week profile expires, the profile is reset to the extended lifetime. All new visitor profiles are set to the extended profile lifetime.</p>
+
+</div>
+<!-- docs-main view end -->
+
+
+          
+        <div>        
+<h2 class="ada-section-title" id="recsSimpleList">More help on this topic</h2>
+
+<ul>
+  <li><a href="https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html?lang=en">What Are Visitor Profiles?</a></li>
+  <li><a href="https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=en">What Are Profile Attributes?</a></li>
+  <li><a href="https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/variables-profiles-parameters-methods.html?lang=en">Which Profiles, Variables, and Parameters Are Used in Target?</a></li>
+</ul></div>
+        </div>
+    `,
   },
   {
     number: 8,
@@ -257,7 +339,8 @@ let questions = [
       },
     ],
     notes: `
-    
+    <blockquote>If you have a data layer, it is optimal to define as much of it as possible in the <code>&lt;head&gt;</code> of your pages before at.js loads. This placement provides the maximum ability to use this information in Target for personalization.</blockquote>
+    <i>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/deploy-at-js/implement-target-without-a-tag-manager.html?lang=en">https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/deploy-at-js/implement-target-without-a-tag-manager.html?lang=en</a></i>
     
     `,
   },
