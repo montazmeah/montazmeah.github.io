@@ -450,7 +450,15 @@ mboxPC={123456}" border=:"0"/&gt;
         text: "appMeasurement.js",
       },
     ],
-    notes: ``,
+    notes: `
+    <h3 id="step7" tabindex="-1">Step 7: Reference at.js on all site pages</h3>
+    <p>Include at.js below VisitorAPI.js by adding the following line of code in the tag on each page:</p>
+    <p>For at.js:</p>
+    <code class="language-javascript"><span class="token operator">&lt;</span>script language<span class="token operator">=</span><span class="token string">"JavaScript"</span> type<span class="token operator">=</span><span class="token string">"text/javascript"</span>
+src<span class="token operator">=</span><span class="token string">"http://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/at.js"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code>
+<i>Source: <a target="_blank" href="https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html?lang=en">https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html?lang=en</a></i>
+`,
   },
   {
     number: 11,
