@@ -1168,7 +1168,16 @@ What is the correct syntax for the Dynamic Data?</p>
         text: '${user.lastProductPurchased encode="escape"}',
       },
     ],
-    notes: ``,
+    notes: `
+    <p>For profile parameters passed into an mbox, use the syntax:</p>
+    <p><code>${profile.parameter}</code></p>
+    <p>For profile parameters created in a profile script, use the syntax:</p>
+    <p><code>${user.parameter}</code></p>
+    <i>Source: <a href="https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html?lang=en">https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html?lang=en</a></i>
+
+    <p>I also answered <a target="_blank" href="https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/difference-between-quot-profile-quot-and-quot-user-quot/m-p/415194">this question on the Adobe forum</a> after reading the accepted answer and finding it to be an unsatisfactory explanation.</p>
+    
+    `,
   },
   {
     number: 39,
